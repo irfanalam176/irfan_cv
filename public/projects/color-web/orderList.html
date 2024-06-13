@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modals.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <img src="./img/navLogo.png" alt="" />
+          演色印刷事業<br />
+          企業管理系統
+        </div>
+        <div class="logIn" data-bs-toggle="modal" data-bs-target="#modal3">
+          <img src="./img/navLogin.svg" alt="" />
+          登出
+        </div>
+        <i class="fa-solid fa-bars" onclick="toggleSideBar()"></i>
+      </header>
+      <div class="mainBodyWrapper">
+        <div class="mainBody">
+          <!-- side bar -->
+          <div class="aside">
+            <div class="sideBar">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                     <div class="accordianName">
+                      <img src="./img/camera.svg" alt="">
+                      攝影作業
+                     </div>
+                    </button>
+                  </h2>
+                  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="#">攝影時段</a>
+                      <a href="./appointmentList.html">排程總表</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                     <div class="accordianName">
+                      <img src="./img/edu.svg" alt="">
+                      大專業務
+                     </div>
+                    </button>
+                  </h2>
+                  <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="./uniform.html">學士服資料</a>
+                      <a href="./uniformPackage.html">學士服方案</a>
+                      <a href="./yearBookPackage.html">年鑑方案</a>
+                      <a href="./periodSetting.html">波段設定</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                     <div class="accordianName">
+                      <img src="./img/edu2.svg" alt="">
+                      學士服訂單作業
+                     </div>
+                    </button>
+                  </h2>
+                  <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="./uniformSchoolLink.html">學校維護</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                     <div class="accordianName">
+                      <img src="./img/doc.svg" alt="">
+                      學士服訂單作業
+                     </div>
+                    </button>
+                  </h2>
+                  <div id="collapse4" class="accordion-collapse " data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="./orderDetail.html">訂單名細</a>
+                      <a href="./orderList.html" class="active">統計列表</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button onclick="window.location.href='./uniformProcurement.html'" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                      <div class="accordianName">
+                       <img src="./img/cart.svg" alt="">
+                       採購作業
+                      </div>
+                     </button>
+                  </h2>
+                  <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                   
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                     <div class="accordianName">
+                      <img src="./img/user.svg" alt="">
+                      資料維護
+                     </div>
+                    </button>
+                  </h2>
+                  <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="./customer.html">客戶資料</a>
+                      <a href="#">印刷商品資料</a>
+                      <a href="#">文創禮品資料</a>
+                      <a href="./employe.html">員工資料</a>
+                      <a href="#">學士服資料</a>
+                      <a href="./vendor.html">廠商資料</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                     <div class="accordianName">
+                      <img src="./img/gear.svg" alt="">
+                      系統設定
+                     </div>
+                    </button>
+                  </h2>
+                  <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="./user.html" >系統使用者</a>
+                      <a data-bs-toggle="modal" data-bs-target="#modal4">修改密碼</a>
+                      <a >權限管理</a>
+                      <a href="./group.html">群組管理</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                     <div class="accordianName">
+                      <img src="./img/box.svg" alt="">
+                      庫存管理
+                     </div>
+                    </button>
+                  </h2>
+                  <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <a href="./uniformInventory.html">庫存管理</a>
+                      <a href="./uniformInventoryWareHouse.html">入庫作業</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="w-100 overflow-hidden">
+            <div class="statistics">
+                <div class="row">
+                    <div class="col-lg-4"><h1>學士服訂單統計</h1></div>
+                   
+                   <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg  mb-1 my-lg-0">
+                            <div class="d-flex justify-content-between">
+                                <label for="" class="my-auto">業務專用</label>
+                                <a href="" style="--color:#FF3D00;" ><img src="./img/print-red.svg" alt="">匯出訂單總計</a>
+                            </div>
+                        </div>
+                        <div class="col-lg mb-1 my-lg-0">
+                            <div class="d-flex justify-content-between">
+                                <label for="" class="my-auto">倉庫專用</label>
+                                <a href="" style="--color:#25B7AD;"><img src="./img/print-green.svg" alt="">匯出數量總計</a>
+                            </div>
+                        </div>
+                        <div class="col-lg mb-1 mb-lg-0">
+                            <div class="d-flex  justify-content-between">
+                                <label for="" class="my-auto" style="margin-left: -0.7em;">畢聯會專用</label>
+                                <a href="" style="--color:#005BC1;"><img src="./img/print-blue.svg" alt="">匯出數量名細</a>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+              <div class="mainContent">
+             
+                <div class="header">
+                  <div class="modalInputs">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <label for="">學校名稱</label>
+                        <div class="inputsArea selectArea ">
+                          <img src="./img/selectDownArrow.svg" alt="" />
+                          <select name="" id="">
+                            <option value="" disabled selected>select--</option>
+                            <option value="">op1</option>
+                            <option value="">op2</option>
+                            <option value="">op3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <label for="">波段</label>
+                        <div class="inputsArea selectArea ">
+                          <img src="./img/selectDownArrow.svg" alt="" />
+                          <select name="" id="">
+                            <option value="" disabled selected>select--</option>
+                            <option value="">op1</option>
+                            <option value="">op2</option>
+                            <option value="">op3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <label for="">類別</label>
+                        <div class="inputsArea selectArea ">
+                          <img src="./img/selectDownArrow.svg" alt="" />
+                          <select name="" id="">
+                            <option value="" disabled selected>select--</option>
+                            <option value="">op1</option>
+                            <option value="">op2</option>
+                            <option value="">op3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 my-auto">
+                        <a href="#" class="mainBtn largeBtn"><img src="./img/searchWhite.svg" alt="">搜尋</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- table data -->
+                <div class="tableSection">
+                  <div class="tableContainer">
+                    <table id="myTable">
+                      <thead>
+                        <tr>
+                          <th>披肩 <img src="./img/filterArrow.svg" alt="" /></th>
+                          <th>班級 <img src="./img/filterArrow.svg" alt="" /></th>
+                          <th style="width: 10em;"></th>
+                          <th>
+                            XS <img src="./img/filterArrow.svg" alt="" />
+                          </th>
+                          <th>
+                            S <img src="./img/filterArrow.svg" alt="" />
+                          </th>
+                          <th>M <img src="./img/filterArrow.svg" alt="" /></th>
+                          <th>
+                            L <img src="./img/filterArrow.svg" alt="" />
+                          </th>
+                          <th>XL<img src="./img/filterArrow.svg" alt="" /></th>
+                          <th>
+                            2XL<img src="./img/filterArrow.svg" alt="" />
+                          </th>
+                          <th>
+                            小計<img src="./img/filterArrow.svg" alt="" />
+                          </th>
+                          <th class="text-start">
+                            電繡數<img src="./img/filterArrow.svg" alt="" />
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>99</td>
+                          <td>99</td>
+                          <td></td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                        </tr>
+                        <tr>
+                          <td>98</td>
+                          <td>98</td>
+                          <td></td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                        </tr>
+                        <tr>
+                          <td>97</td>
+                          <td>97</td>
+                          <td></td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                        </tr>
+                        <tr>
+                          <td>96</td>
+                          <td>96</td>
+                          <td></td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                        </tr>
+                        <tr>
+                          <td>95</td>
+                          <td>95</td>
+                          <td></td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                        </tr>
+                        <tr>
+                          <td>99</td>
+                          <td>99</td>
+                          <td></td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                        </tr>
+                        <tr>
+                          <td>98</td>
+                          <td>98</td>
+                          <td></td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                        </tr>
+                        <tr>
+                          <td>97</td>
+                          <td>97</td>
+                          <td></td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                        </tr>
+                        <tr>
+                          <td>96</td>
+                          <td>96</td>
+                          <td></td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                        </tr>
+                        <tr>
+                          <td>95</td>
+                          <td>95</td>
+                          <td></td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                        </tr>
+                        <tr>
+                          <td>99</td>
+                          <td>99</td>
+                          <td></td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                          <td>99</td>
+                        </tr>
+                        <tr>
+                          <td>98</td>
+                          <td>98</td>
+                          <td></td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                          <td>98</td>
+                        </tr>
+                        <tr>
+                          <td>97</td>
+                          <td>97</td>
+                          <td></td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                          <td>97</td>
+                        </tr>
+                        <tr>
+                          <td>96</td>
+                          <td>96</td>
+                          <td></td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                          <td>96</td>
+                        </tr>
+                        <tr>
+                          <td>95</td>
+                          <td>95</td>
+                          <td></td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                          <td>95</td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <h6 class="brand">系統設計：易及資訊有限公司</h6>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+   <script src="./js/sortData.js"></script>
+</body>
+</html>

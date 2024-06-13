@@ -1,0 +1,116 @@
+.modalHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+.modalHeader .modalTitle{
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #25AAE6;
+}
+.modalInputs .inputsArea{
+    display: flex;
+    align-items: center;
+    border: 1px solid #25AAE6;
+    border-radius: 6px;
+    padding: 0.7em 0.5em;
+    margin-bottom: 2em;
+}
+.modalInputs .inputsArea img{
+    margin-right: 1em;
+}
+.modalInputs input{
+    border: none;
+    outline: none !important;
+    font-family: "Lexend";
+    width: 100%;
+    padding-left: 0em;
+}
+.modalInputs input[type="date"]{
+    padding-left: 1em;
+}
+.modalInputs input::placeholder{
+    font-weight: 400;
+    font-size: 1em;
+    font-family: "Lexend"
+}
+.modalInputs label{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+.modalInputs select{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    isolation: isolate;
+}
+.modal-content {
+    border-radius: 20px;
+    box-shadow: 2px 3px 20px 0 #00000040;
+}
+.modal-body{
+    padding: 5em;
+}
+.modal-md .modal-body,.modal-sm .modal-body{
+    padding: 2em;
+}
+.inputsArea.selectArea{
+    position: relative;
+}
+.inputsArea.selectArea img{
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modalCheckBox{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1.5em;
+}
+.modalCheckBox label{
+    color: #3A3A3A;
+    font-weight: 700;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.modalCheckBox input{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #606060;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.modalCheckBox input:checked{
+    border-color: #25AAE6;
+    background: url("../img/checkedIcon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120% 120%;
+}
+@media(max-width:1200px){
+    .modal-body{
+        padding: 2em;
+    }
+    .modal-md .modal-body,.modal-sm .modal-body{
+        padding: 1em;
+    }
+}
+@media(max-width:992px){
+    .modal-body{
+        padding: 2em;
+    }
+    .modal-md .modal-body,.modal-sm .modal-body{
+        padding: 1em;
+    }
+}

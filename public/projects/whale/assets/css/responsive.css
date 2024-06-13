@@ -1,0 +1,857 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .roadmapBlk .date { 
+        width: 125px; 
+    }
+    .roadmapBlk .roadmapcontent { 
+        min-width: 120px;
+        max-width: 166px; 
+    }
+
+
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    ul.social_icons a {
+        width: 48px;
+        height: 48px;
+        margin-right: 5px;
+    }
+    ul.menu a { 
+        margin: 0 8px; 
+    }
+    .headerActBtns a.btn {
+        padding: 12px 24px; 
+    }
+    .hero-left h1 {
+        font-size: 46px;
+        line-height: 52px;
+        margin-top: 5px;
+        margin-bottom: 16px;
+    } 
+    .hero-right img.firstImg { 
+        max-width: 230px;
+    }
+    .tokenwrps-middle { 
+        min-width: 290px;
+        max-width: 290px;
+        margin: 0 50px;
+    }
+    .tokenwrps-middle:before, .tokenwrps-middle:after { 
+        width: 495px;
+        height: 495px; 
+    }
+    .tokenwrps-middle:after { 
+        width: 497px;
+        height: 497px;
+    }
+    .tokenwrps-right .tokenwrps-content-blk div { 
+        margin-left: 0px;
+    }
+    .roadmapBlk .roadmapcontent {
+        min-width: 105px;
+        max-width: 105px;
+        padding-left: 15px;
+    }
+    .roadmapBlk .roadmapcontent p { 
+        font-size: 13px;
+        line-height: 19px; 
+        margin-top: 10px;
+    }
+    .roadmapBlk .date { 
+        width: 103px; 
+        padding: 0 15px; 
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .teamwrp ul.social_icons a { 
+        width: 39px;
+        height: 39px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-left ul{
+        display: none;
+    }
+    section.Hero-Area {
+        padding-top: 130px;
+        position: relative;
+        z-index: 2;
+    }
+    .hero-left h1 {
+        font-size: 48px;
+        line-height: 50px;
+    }
+    
+    .hero-left h4 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    .hero-left {
+    }
+    
+    .hero-left > a.btn {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    
+    div#countdown {
+        margin: auto;
+    }
+    
+    .showofData {justify-content: center;}
+    
+    .hero-right {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .performance-wrp {
+        padding: 70px 0;
+    }
+    
+    .performance-wrp h2 {
+        font-size: 38px;
+        line-height: 52px;
+        margin-bottom: 30px;
+    }
+    
+    section.howwork-area {
+        padding: 20px 0;
+        padding-bottom: 80px;
+    }
+    
+    .workingblks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .wrkBlk {
+        margin: 20px 15px;
+    }
+    
+    .section-title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .wrkBlk img.line, .wrkBlk img.line-up {
+        display: none;
+    }
+    
+    section.RosyWhaale-area a.btn {
+        margin: auto;
+        display: block;
+        width: max-content;
+    }
+    
+    section.RosyWhaale-area {
+        padding-bottom: 90px;
+    }
+    
+    .tokenwrps {
+        flex-wrap: wrap;
+    }
+    
+    .tokenwrps-blks {
+        height: auto;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .tokenwrps-middle {
+        display: none;
+    }
+    
+    .tokenwrps-content-blk {
+        flex-direction: row-reverse;
+        text-align: left;
+        justify-content: left;
+        margin-top: 20px;
+    }
+    
+    .tokenwrps-blks.tokenwrps-left .tokenwrps-content-blk:first-child > img, .tokenwrps-blks.tokenwrps-left .tokenwrps-content-blk:last-child > img {
+        right: 0;
+    }
+    
+    .tokenwrps-blks.tokenwrps-right .tokenwrps-content-blk:first-child > img, .tokenwrps-blks.tokenwrps-right .tokenwrps-content-blk:last-child > img {
+        left: 0;
+    }
+    
+    section.roadmap-area {
+        padding-top: 100px;
+    }
+    
+    .roadmap-line {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    section.comingsoon .row.align-items-center {
+        flex-direction: column-reverse;
+    }
+    
+    section.comingsoon .commingsoon {
+        display: block;
+        text-align: center !IMPORTANT;
+        margin: 30px 0;
+    }
+    .tokenwrps-content-blk div {
+        margin: 0;
+        margin-left: 16px;
+    }
+    .teammate {
+        margin-top: 100px;
+    }
+    
+    section.Tokenomics-area {
+        margin-top: 80px;
+    }
+    
+    .tokenomics-left a.btn {
+        display: none;
+    }
+    
+    .tokenomics-right {
+        padding: 0;
+    }
+    
+    section.faq-area {
+        margin-top: 50px;
+    }
+    
+    section.faq-area .row {
+        flex-direction: column-reverse;
+    }
+    
+    .faq-right {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    section.comingsoon {
+        padding-top: 100px;
+    }
+    footer {
+        padding-top: 100px;
+    }
+    .showinphone {
+        width: 100%;
+    }
+    
+    .showinphone img {
+        display: block;
+        width: 100%;
+        margin: -200px 0;
+    }
+    .roadmap-line {
+        display: block;
+        height: auto;
+        position: relative;
+    }
+    
+    .roadmap-line .roadmapBlk {
+        display: block;
+        height: 150px;
+        width: 100px;
+        margin: auto;
+        margin-bottom: 0px;
+        position: relative;
+    } 
+    .rosyblk-blks {
+        padding-right: 0px;
+    }
+    .roadmapBlk .date {
+        position: relative;
+        top: 36px;
+        left: -15%;
+        transform: rotate(90deg);
+    }
+    .roadmap-line .roadmapBlk:nth-child(odd) .roadmapcontent {
+        top: 0;
+        left: 104%;
+    }
+    .roadmap-line .roadmapBlk:nth-child(even) .roadmapcontent {
+        top: 10px;
+        left: -285%;
+    }
+    .roadmapBlk .roadmapcontent {
+        padding: 0;
+        padding-top: 15px;
+        min-width: 260px;
+    }
+    
+    .roadmapcontent .shapes {
+        top: 0;
+        height: 2px;
+        width: 100%;
+    }
+    
+    .roadmapcontent .shapes::before {
+        left: 0;
+        top: -4px;
+    }
+    
+    .roadmapcontent .shapes::after {
+        left: auto;
+        right: -7px;
+        top: -4px;
+    }
+
+
+
+
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    body{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .header-left ul{
+        display: none;
+    }
+    section.Hero-Area {
+        padding-top: 130px;
+        position: relative;
+        z-index: 2;
+    }
+    .hero-left h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    div#countdown ul li { 
+        line-height: 21px; 
+        padding: 5px 10px; 
+    }
+    .hero-left h4 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    .hero-left {
+    }
+    
+    .hero-left > a.btn {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    
+    div#countdown {
+        margin: auto;
+    }
+    .col-lg-4.mt-4 {
+        margin-top: 10px !IMPORTANT;
+    }
+    .showofData {justify-content: center;}
+    .rosyblk { 
+        padding: 10px;
+        font-size: 14px;
+        line-height: 22px; 
+        margin-bottom: 15px !important;
+    }
+    section.team-area {
+        padding-top: 50px;
+    }
+    .hero-right {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-right: 15px;
+        margin: 15px 0;
+        margin-bottom: 30px;
+    }
+    .performance-wrp {
+        padding: 40px 0;
+    }
+    .performance-wrp h2 {
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 22px;
+    }
+    section.howwork-area {
+        padding: 0px 0;
+        padding-bottom: 40px;
+    }
+    
+    .workingblks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-title h3 {
+        font-size: 28px;
+        line-height: 129.5%;
+    }
+    .wrkBlk img.bicon { 
+        margin-bottom: 24px;
+    }
+    .section-title p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .wrkBlk {
+        margin: 10px 0;
+    }
+    
+    .section-title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .wrkBlk img.line, .wrkBlk img.line-up {
+        display: none;
+    }
+    
+    section.RosyWhaale-area a.btn {
+        margin: auto;
+        display: block;
+        width: max-content;
+        margin-bottom: 20px;
+        margin-top: -10px;
+    }
+    
+    section.RosyWhaale-area {
+        padding-bottom: 45px;
+    }
+    
+    .tokenwrps {
+        flex-wrap: wrap;
+    }
+    
+    .tokenwrps-blks {
+        height: auto;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .tokenwrps-middle {
+        display: none;
+    }
+    
+    .tokenwrps-content-blk {
+        flex-direction: row-reverse;
+        text-align: left;
+        justify-content: left;
+        margin-top: 20px;
+    }
+    
+    .tokenwrps-blks.tokenwrps-left .tokenwrps-content-blk:first-child > img, .tokenwrps-blks.tokenwrps-left .tokenwrps-content-blk:last-child > img {
+        right: 0;
+    }
+    
+    .tokenwrps-blks.tokenwrps-right .tokenwrps-content-blk:first-child > img, .tokenwrps-blks.tokenwrps-right .tokenwrps-content-blk:last-child > img {
+        left: 0;
+    }
+    
+    section.roadmap-area {
+        padding-top: 100px;
+    }
+    
+    .roadmap-line {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    section.comingsoon .row.align-items-center {
+        flex-direction: column-reverse;
+    }
+    
+    section.comingsoon .commingsoon {
+        display: block;
+        text-align: center !IMPORTANT;
+        margin: 30px 0;
+    }
+    .tokenwrps-content-blk div {
+        margin: 0;
+        margin-left: 16px;
+    }
+    .teammate {
+        margin: auto;
+        margin-top: 90px;
+        max-width: 90%;
+    }
+    .tknBlk-left {
+        padding-right: 5px;
+        margin-right: 10px;
+        min-width: 85px;
+        max-width: 85px; 
+    }
+    section.Tokenomics-area {
+        margin-top: 50px;
+    }
+    /* .tokenomics-left img { 
+        margin-top: 30px;
+        margin-bottom: 40px;
+    } */
+    .tokenomics-left{
+        background-position: 50% 77%;
+        
+      }
+    .tokenomics-left a.btn {
+        display: none;
+    }
+    .tknBlk {
+        border-left-width: 4px;
+    }
+    .accordion-item { 
+        margin-bottom: 10px;
+        padding: 16px;
+    }
+    .tknBlk-left h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .tknBlk > p {
+        margin: 0;
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .tknBlk-left  p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .tokenomics-right {
+        padding: 0;
+    }
+    
+    section.faq-area {
+        margin-top: 50px;
+    }
+    
+    section.faq-area .row {
+        flex-direction: column-reverse;
+    }
+    .accordion-item button { 
+        font-size: 16px;
+        line-height: 25px; 
+    }
+    .faq-right {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    section.comingsoon {
+        padding-top: 40px;
+    }
+    footer {
+        padding-top: 40px;
+    }
+    section.comingsoon .commingsoon {
+        margin-top: 0;
+    }
+    .showinphone {
+        width: 100%;
+    }
+    .tokenwrps-content-blk > img {
+        max-width: 60px;
+    }
+    
+    .tokenwrps-content-blk div p {
+        line-height: 24px;
+    }
+    .showinphone img {
+        display: block;
+        width: 296px;
+        margin: -110px auto;
+        margin-top: -130px;
+    }
+    .roadmap-line {
+        display: block;
+        height: auto;
+        position: relative;
+    }
+    section.Hero-Area .shape2.first {
+        width: 410px;
+        height: 410px;
+        left: -205px;
+        bottom: 26%;
+        top: auto;
+    }
+    .brands:before, .brands:after { 
+        width: 99%;
+        height: 99.5%; 
+    }
+    .showofData .shdBlk h4 {
+        font-size: 15px;
+        line-height: 49px;
+    }
+    .brands img { 
+        max-height: 29px;
+        margin: 0 10px;
+        margin-bottom: 40px;
+    }
+    .showofData .shdBlk span {
+        display: block;
+        font-size: 10px;
+        line-height: 22px;
+    }
+    .showofData .shdBlk{
+        padding: 0;
+        margin-right: 5px;
+    }
+    .aum{
+        line-height: 1.2em;
+        margin-bottom: 0;
+    }
+    .showofData .shdBlk h4 span {
+        font-size: 15px;
+        line-height: 18px;
+        margin-left: 6px;
+    }
+    section.roadmap-area img.sp { 
+        top: -58%; 
+        max-width: 90%;
+    }
+    .hero-right {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-right: 15px;
+        margin: 15px 0;
+        margin-bottom: 30px;
+    } 
+    .hero-right img.firstImg {
+        right: -20px;
+        top: -25px;
+    }
+    .hero-right img {
+        max-width: 145px;
+    }
+    .roadmap-line .roadmapBlk {
+        display: block;
+        height: 125px;
+        width: 100px;
+        margin: auto;
+        margin-bottom: 0px;
+        position: relative;
+    } 
+    .rosyblk-blks {
+        padding-right: 0px;
+    }
+    .roadmapBlk .date {
+        position: relative;
+        top: 28px;
+        left: -10%;
+        transform: rotate(90deg);
+        font-size: 13px;
+        line-height: 20px;
+        width: 115px;
+        height: 56px;
+    }
+    .roadmap-line .roadmapBlk:nth-child(odd) .roadmapcontent {
+        top: 0;
+        left: 85%;
+        max-width: 110px;
+        min-width: 110px;
+        height: auto;
+    }
+    .roadmapBlk .roadmapcontent p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .roadmap-line .roadmapBlk:nth-child(even) .roadmapcontent {
+        top: 10px;
+        left: -97%;
+        max-width: 110px;
+        min-width: 110px;
+    }
+    .roadmapBlk .roadmapcontent {
+        padding: 0;
+        padding-top: 15px; 
+    }
+    
+    .roadmapcontent .shapes {
+        top: 0;
+        height: 2px;
+        width: 100%;
+    }
+    
+    .roadmapcontent .shapes::before {
+        left: 0;
+        top: -4px;
+    }
+    .roadmapcontent img {
+        max-width: 40px;
+    }
+    .roadmapcontent .shapes::after {
+        left: auto;
+        right: -7px;
+        top: -4px;
+    }
+    section.Hero-Area .shape1.first {
+        width: 278px;
+        height: 278px;
+        right: -200px;
+        top: -90px;
+    }
+    .footer-top {
+        display: block;
+        text-align: center;
+    }
+    ul.menu a { 
+        margin: 0 10px; 
+    }
+    .footer-top-left {
+        margin-bottom: 15px;
+    }
+    
+    .footer-top {
+        padding-bottom: 10px;
+        margin-bottom: 0;
+        border: none;
+    }
+    
+    .footer-bottom {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+    
+    .footer-bottom p {
+        font-size: 14px;
+        line-height: 18px;
+        border-top: 2px solid #212143;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    section.Hero-Area img.spr { 
+        max-width: 80%;
+    }
+    section.Hero-Area img.spr2 {
+        bottom: 360px;
+        z-index: -2;
+    }
+    section.Hero-Area .shape2.last {
+       display: none;
+    }
+    section.Hero-Area .shape1.last {
+        width: 193.8px;
+        height: 193.8px;
+        bottom: 30%;
+        right: 10%;
+    }
+    section.performance-area .shape2.first {
+        width: 229px;
+        height: 229px;
+        left: -65px;
+        top: 25%;
+    }
+    section.Hero-Area .shape1.last {
+        width: 193.8px;
+        height: 193.8px;
+        bottom: 30%;
+        right: 10%;
+    }
+    
+    section.performance-area .shape2.last {
+        width: 288.41px;
+        height: 288.41px;
+        bottom: -49px;
+        right: -100px;
+    }
+
+    section.howwork-area .shape1.sp1,
+    section.roadmap-area .shape2.sp2,
+    section.team-area .shape1.sp1,
+    section.Tokenomics-area .shape2.sp2,
+    section.Tokenomics-area .shape2.sp3,
+    section.Tokenomics-area .shape2.sp5,
+    section.Tokenomics-area img.sp2,
+    footer img.sp,
+    section.howwork-area .shape2.sp4{
+        display: none;
+    }
+    section.howwork-area .shape1.sp2 {
+        width: 288.41px;
+        height: 288.41px;
+        right: -200px;
+        top: -120px; 
+    }
+    section.howwork-area .shape2.sp3 {
+        width: 199.82px;
+        height: 199.82px;
+        left: -36.66px;
+        bottom: 70%; 
+    }
+    section.howwork-area img.sp { 
+        bottom: 66%;
+        max-height: 290px; 
+    }
+    section.howwork-area .shape2.sp5 {
+        width: 294.29px;
+        height: 294.29px;
+        right: -200px;
+        bottom: -20px;
+    }
+    section.RosyWhaale-area img.sp { 
+        bottom: -10%;
+        max-height: 600px;
+    } 
+    section.token-area img.sp { 
+        top: -70%; 
+    }
+    section.RosyWhaale-area .shape2.sp4 {
+        width: 203.58px;
+        height: 203.58px;
+        bottom: 10px;
+        right: 0px;
+    }
+    section.roadmap-area .shape2.sp1 {
+        width: 237.81px;
+        height: 237.81px;
+        top: 20%;
+        left: 30%; 
+    }
+    section.comingsoon img.sp { 
+        top: 60%; 
+    }
+    section.team-area img.sp { 
+        top: 63%; 
+    }
+    section.team-area img.sp2 { 
+        top: 19%; 
+    }
+    section.Tokenomics-area .shape1.sp1 {
+        width: 250.3px;
+        height: 347px;
+        left: -207px;
+        right: auto;
+        top: 100px;
+    }
+    section.Tokenomics-area .shape2.sp4 {
+        width: 248.86px;
+        height: 346px;
+        left: -186.86px;
+        bottom: 45%;
+    }
+
+
+
+
+
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}

@@ -1,0 +1,989 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+/* font-family: "Noto Sans TC", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans+TC:wght@100..900&display=swap');
+/* font-family: "Lexend", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+/* font-family: "Quicksand", sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* -webkit-overflow-scrolling: touch; */
+}
+*::-webkit-scrollbar{
+    width: 6px;
+}
+*::-webkit-scrollbar-track{
+    background-color: #E3E3E3;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #25AAE6;
+    border-radius: 100px;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: "Quicksand", sans-serif; 
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none !important;
+    transition: all ease-in-out 200ms;
+}
+a:hover{
+    opacity: 0.8;
+}
+label img{
+    cursor: pointer;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+.brand{
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.75em;
+    font-weight: 400;
+    padding: 3em 0;
+}
+.signBody .brand{
+    padding-bottom:0 ;
+}
+/* sign page start*/
+.signBody{
+    min-height: 100vh;
+    background-color: #005BC1CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signBody form{
+    box-shadow: 0px 0px 50px 10px #00000040;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 3em;
+}
+.signBody form header{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 3em;
+}
+.signBody form header h1{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 900;
+    font-size: 2.1em;
+}
+.signBody form input{
+    border: none !important;
+    outline: none !important;
+}
+.signBody form input:not(.signBody form input[type="checkbox"]){
+    width: 100%;
+}
+.signBody form input::placeholder{
+    color: #D0D4CA;
+    font-family: "Lexend", sans-serif; 
+    font-size: 1em;
+    font-weight: 400;
+}
+.signBody form .inputs{
+    width: 100%;
+}
+.signBody form .input{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid #D0D4CA;
+    border-radius: 15px;
+    padding: 1em 1em;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.signBody form label{
+    font-family: "Lexend", sans-serif; 
+    font-weight: 700;
+    font-size: 0.9em;
+    color: #333333;
+    margin-bottom: 2px;
+}
+.signBody form .confirm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+.signBody form .confirm label,.signBody form .confirm a{
+    font-family: "Lexend", sans-serif; 
+    color: #25AAE6;
+    font-weight: 400;
+    font-size: 0.9em;
+    text-decoration: none !important;
+}
+.signBody form .confirm div{
+    display: flex;
+    align-items: center;
+}
+.signBody form .confirm input{
+    accent-color: #25AAE6;
+    margin-right: 0.5em;
+    box-shadow: inset 2px 2px #25AAE6, inset -2px -2px #25AAE6, inset 2px -2px #25AAE6, inset -2px 2px #25AAE6;
+    cursor: pointer;
+
+}
+.signBody .signBtn{
+    font-family: "Lexend", sans-serif; 
+    font-weight: 600;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: #25AAE6;
+    width: 100%;
+    padding: 1em;
+    border-radius: 15px;
+    color: #fff !important;
+}
+/* sign page end*/
+/* user page start */
+.wrapper{
+    background-color: #EEEEEE;
+    min-height: 100vh;
+}
+.wrapper header{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 10em;
+    flex-wrap: wrap;
+}
+.wrapper header div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+}
+.wrapper header .logo{
+    color: #3A3A3A;
+    font-weight: 700;
+}
+.wrapper header .logo img{
+    width: 84px;
+    height: 91px;
+}
+.mainBodyWrapper{
+    padding: 2em 10em;
+}     
+.mainBody{     
+    display: flex;
+    height: 100%;
+}
+.sideBar{
+    background-color: #fff;
+    width: 360px;
+    min-height: 100%;
+    padding: 2.3em;
+    border-radius: 6px;
+    margin-right: 2em;
+}
+.sideBar .accordion-item{
+    border: none !important;
+}
+.sideBar .accordion-button{
+    box-shadow: none !important;
+    border-color:transparent !important;
+    transition: all ease-in-out 300ms;
+    border-radius: 6px !important;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+}
+.sideBar .accordion-button:hover,.sideBar .accordion-button{
+    background-color: #25AAE6 ;
+}
+.sideBar .accordion-button.collapsed{
+    background-color: transparent;
+}
+.sideBar .accordion-button img{
+    transition: all ease-in-out 300ms;
+}
+.accordianName{
+    transition: all ease-in-out 300ms;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+.sideBar .accordion-button:hover .accordianName,.sideBar .accordion-button .accordianName{
+    color: #fff ;
+}
+.sideBar .accordion-button.collapsed .accordianName{
+    color: #3A3A3A ;
+}
+.sideBar .accordion-button:hover img,.sideBar .accordion-button img{
+    filter: brightness(0) invert();
+}
+.sideBar .accordion-button.collapsed img{
+    filter: unset;
+}
+.sideBar .accordion-button::after{
+    display: none !important;
+}
+.sideBar .accordion-body {
+    padding-top: 0;
+}
+.sideBar .accordion-body a{
+    display: flex;  
+    gap: 0.5em;
+    color: #3A3A3A;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 0.4em 0;
+    margin-bottom: 1px;
+    transition: all ease-in-out 200ms;
+}
+.sideBar .accordion-body a.active,.sideBar .accordion-body a:hover{
+   background-color: #25AAE61A;
+   color: #25AAE6;
+   font-weight: 600;
+}
+.sideBar .accordion-body a::before{
+    display: block;
+    width: 25px;
+    height: 25px;
+    content: '';
+}
+.mainContent{
+    background-color: #fff;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+.mainContent .header,.statistics{
+    padding: 2.3em 2.3em;
+}
+.mainContent .shedule{
+    padding: 0em 2.3em;
+    padding-bottom: 2em;
+}
+.mainContent .header .title{
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #232323;
+}
+.mainContent .header input{
+    padding: 0.7em 1.3em;
+    border: 1px solid #E1E1E1;
+    border-radius: 6px;
+    width: 100%;
+    outline: none ;
+}
+.mainContent .header input::placeholder{
+    font-weight: 500;
+    font-size: 0.9em;
+    color: #D0D4CA;
+}
+.mainBtn{
+    display: inline-block;
+    background-color: #25AAE6;
+    border: 1px solid #25AAE6;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.9em;
+    padding: 0.8em 1.3em;
+    transition: all ease-in-out 200ms;
+}
+.mainBtn.largeBtn{
+    width: 100%;
+    text-align: center;
+}
+.mainBtn:not(.mainBtn.mainBtn.outlined):hover{
+    background-color: transparent;
+   
+    color: #25AAE6;
+}
+.mainBtn:not(.mainBtn.outlined):hover img{
+    filter: invert(61%) sepia(97%) saturate(2468%) hue-rotate(166deg) brightness(97%) contrast(86%);
+}
+.mainBtn.outlined:hover img{
+    filter: brightness(0) invert();
+}
+.mainBtn.outlined:hover{
+    background-color: #25AAE6;
+    color: #fff;
+}
+.mainBtn.outlined{
+    background-color: transparent;
+    border: 1px solid #25AAE6;
+    color: #25AAE6;
+}
+.mainBtn img{
+    margin-right: 1em;
+    height: 1.5em;
+}
+.mainContent .header .mainBtn{
+    width: 100%;
+}
+.tableSection{
+    padding: 0 2.3em;
+    padding-bottom: 2em;
+    min-height: 700px;
+}
+.tableContainer{
+    height: 58vh;
+    overflow-y: auto;
+}
+
+.tableContainer table{
+    width: 95%;
+}
+.tableContainer table th{
+    color: #232323;
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 1em 0;
+}
+.tableContainer table th img{
+    margin-left: 0.6em;
+}
+.tableContainer table td{
+    border-top: 1px solid #D3D3D3;
+    padding: 1em 0;
+    color: #232323;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+.tableContainer table td input{
+    margin-right: 0.6em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.tableContainer table th:last-child {
+    text-align: end;
+}
+.tableContainer table td:last-child div{
+    justify-content: flex-end;
+}
+.wrapper header .fa-bars{
+    display: none;
+}
+.mainContent .shedule .sheduleSelect{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+.mainContent .shedule .sheduleSelect img{
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.mainContent .shedule .sheduleSelect select{
+    cursor: pointer;
+    border: 1px solid #25AAE6;
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+.mainContent .shedule  label{
+    color: #3A3A3A;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+.mainContent .shedule  input{
+    padding: 0.3em 1em;
+    background-color: #F5F5F5;
+    border-radius: 6px;
+    border: 1px solid #F5F5F5;
+    outline: none;
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #232323;
+}
+
+.customRadio input{
+    display: none;
+}
+.customRadio label{
+    width: 100%;
+    padding: 0.3em 0;
+    border-radius: 2px;
+    border: 1px solid #25AAE6;
+    transition: all ease-in-out 200ms;
+    cursor: pointer;
+    margin-bottom: 0.7em;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #3A3A3A;
+}
+.schoolInfo label{
+    border-radius: 15px;
+    border-color: #25AAE6;
+}
+.customRadio label:hover{
+    background-color: #00000033;
+}
+.customRadio input:checked+label{
+    background-color: #00000033;
+}
+.schoolInfo input:checked+label{
+    background-color: #25AAE6;
+    color: white;
+}
+.timing{
+    border: 1px solid #25AAE6;
+    border-radius: 2px;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.schoolInfo .timing{
+    align-items: flex-start;
+    border-radius: 15px;
+}
+.timing .title{
+    display: flex;
+    align-items: center;
+    color: #3A3A3A;
+    gap: 1em;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-bottom: 1.5em;
+}
+.timing h6{
+    color: #3A3A3A;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+.timeInput{
+    background-color: #F5F5F5;
+    border-radius: 6px;
+    outline: none;
+    padding: 0.3em 1em;
+}
+.timeInput + img{
+    width: 30px;
+}
+/* .schoolFormContainer{
+    margin-left: -10em;
+} */
+
+.askAccount{
+    margin: 1.5em 0;
+    margin-top: 4em;
+    text-align: center;
+}
+.askAccount a{
+    color: #25AAE6;
+    font-weight: 400;
+}
+.signBody.schoolAccountBody {
+    background:linear-gradient(#005BC11A,#005BC11A),url("../img/loginBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.signBody.schoolAccountBody.blue{
+    background:linear-gradient(#005BC1CC,#005BC1CC),url("../img/loginBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.signBody.schoolAccountBody form .input{
+    margin-bottom: 1em;
+}
+.signBody.schoolAccountBody .signBtn{
+    margin-top: 2em;
+}
+.signBody.schoolAccountBody form header{
+    font-size: 0.7em;
+    margin-bottom: 1.5em;
+}
+
+.tableContainer table td .photo{
+    width: 50px;
+    height: 50px;
+    background-color: #ECEBEB;
+    border-radius: 6px;
+}
+.previewImgBtn{
+    width: 4.3em;
+    height: 4.3em;
+    background-color: #ECEBEB;
+    border-radius: 6px;
+    display: flex;align-items: center;justify-content: center;
+    color: #3A3A3A;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+.tableContainer table td .paragraph{
+    width: 25em;
+}
+.scrollInputs{
+    height: 300px;
+    overflow-y: auto;
+}
+.scrollInputs .innerContainer{
+    padding-right: 2em;
+}
+.commanSheduler{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: space-between;
+}
+.modalInputs  .commanSheduler label{
+    color: #3A3A3A;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+.modalInputs  .commanSheduler input{
+    padding: 0.3em 1.3em;
+    background-color: #F5F5F5;
+    border-radius: 6px;
+    width: 60%;
+    outline: none ;
+}
+.modalInputs  .commanSheduler .select{
+    position: relative;
+    width: 70%;
+}
+.modalInputs  .commanSheduler .select img{
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modalInputs  .commanSheduler select{
+    cursor: pointer;
+    border: 1px solid #25AAE6;
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+.tableContainer.modalTable{
+    height: 500px;
+}
+.tableContainer.modalTable td span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    font-size: 0.8em;
+    font-weight: 400;
+    background-color: #E9E9E9;
+}
+.tableContainer.modalTable td input{
+    border: 1px solid #25AAE6;
+    border-radius: 6px;
+    padding: 0.4em 1em;
+}
+.tableContainer.modalTable td .image{
+    width: 117px;
+    height: 117px;
+    background-color: #E9E9E9;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+.tableContainer.modalTable table th:nth-of-type(2),
+.tableContainer.modalTable table th:nth-of-type(4),
+.tableContainer.modalTable table th:nth-of-type(5) {
+    width: 9em;
+}
+.tableContainer.modalTable td,.tableContainer.modalTable th{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.tableContainer.modalTable table th:last-of-type{
+    width: 11em;
+}
+.modal .qrCode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #25AAE6;
+    border-radius: 8px;
+    padding: 2em;
+    padding-bottom: 0;
+    margin-bottom: 2em;
+}
+.modal .qrCode img{
+    width: 100%;
+}
+.modal .qrCode label{
+    color: #3A3A3A;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 1.3em 0;
+}
+.statistics{
+    border-radius: 6px;
+    background-color: #fff;
+    margin-bottom: 2em;
+}
+.statistics a{
+    border: 1px solid var(--color);
+    color: var(--color);
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: 700;
+    transition: all ease-in-out 200ms;
+}
+.statistics a:hover{
+    background-color: var(--color);
+    color: #fff;
+}
+.statistics label{
+    color: #232323;
+    font-weight: 400;
+    font-size: 0.8em;
+}
+.statistics a img{
+    margin-right: 1em;
+    transition:  all ease-in-out 200ms;
+}
+.statistics a:hover img{
+    filter: brightness(0) invert();
+}
+.statistics h1{
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #232323;
+}
+
+/* appointment page */
+.navbar{
+    background-color: #fff;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+.navbar-brand img{
+    height: 81px;
+}
+.customNavbar .navbar-nav.ms-auto .nav-link.circleBtn{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 1.9;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 1em;
+    font-size: 1.2em;
+    padding: unset !important;
+    color: black;
+}
+.nav-link:not(.mainBtn){
+    color: black;
+}
+.customNavbar .navbar-nav.ms-auto .nav-link.circleBtn.active{
+    background-color: #25aae6;
+    color: white;
+    opacity: 1;
+    border-color: #25aae6;
+}
+.schoolInfo input{
+    width: 100%;
+    border: 1px solid #E1E1E1;
+    border-radius: 6px;
+    padding: 0.6em 2em;
+    outline: none !important;
+}
+.schoolInfo label{
+    color: #3A3A3A;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+.mainHeading{
+    color: #3A3A3A;
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 1.7em;
+}
+.schoolInfo input:focus{
+    background-color: #E1E1E1;
+}
+.schoolInfo{
+    padding: 2em 3em;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    margin-bottom: 2em;
+}
+.appointmentCalender{
+    padding: 0 5em;
+    padding-right: 3em;
+}
+#year{
+    color: #000000;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+   display: none;
+}
+.close-btn{
+    display: none;
+}
+/* user page end */
+@media(max-width:1840px){
+    .mainBodyWrapper{
+        padding: 2em 5em;
+    }
+    .mainContent .header input{
+        padding: 0.5em 1em;
+    }
+    .mainContent .header input::placeholder{
+        font-size: 0.8em;
+    }
+    .wrapper header{
+        padding: 1em 5em;
+    }
+    .mainBtn{
+        font-size: 0.8em;
+    }
+    .mainBtn img{
+        margin-right: 0em;
+    }
+    .mainBody{
+        height: 100%;
+    }
+    .tableContainer{
+        height: 90vh;
+    }
+}
+@media(max-width:1400px){
+    .mainContent .shedule label {
+        font-size: 0.7em;
+    }
+    .statistics a{
+        font-size: 0.6em;
+    }
+    .statistics img{
+        width: 1.5em;
+    }
+    .mainBodyWrapper{
+        padding: 2em 2em;
+    }
+    .navbar{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .wrapper header{
+        padding: 1em 2em;
+    }
+    .mainContent .header input{
+        padding: 0.5em 1em;
+    }
+    .mainContent .header input::placeholder{
+        font-size: 0.8em;
+    }
+    .mainBtn{
+        font-size: 0.7em;
+    }
+    .mainBtn img{
+        margin-right: 0em;
+    }
+    .mainBody{
+        height: 100%;
+    }
+    .tableContainer{
+        height: 90vh;
+    }
+    .signBody form{
+        padding: 2em;
+    }
+    .tableContainer table td p{
+        font-size: 0.7em;
+    }
+}
+
+@media(max-width:1200px){
+    .close-btn{
+        display: block;
+        text-align: end;
+        padding: 1em 0;
+    }
+    .close-btn .fa-times{
+        font-size: 1.5em;
+        color: #25AAE6;
+    }
+    .navbar{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .schoolInfo{
+        padding: 4em 4em;
+    }
+    .appointmentCalender{
+        padding: 3em 0em;
+    }
+ .customRadioContainer{
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+ }
+ .wrapper header{
+    justify-content: flex-start;
+ }
+    .wrapper header .fa-bars{
+        display: block;
+        order: 1;
+        color: #25AAE6;
+    }
+    .wrapper header .logIn{
+        order: 3;
+        margin-left: auto;
+    }
+    .wrapper header .logo{
+        order: 2;
+        font-size: 1em;
+        gap: 0.5em;
+        margin-left: 2em;
+    }
+    .sideBar{
+        width: 300px;
+        position: absolute;
+        top: 0;
+        left: -400px;
+        z-index: 99;
+        transition: all ease-in-out 300ms;
+        box-shadow: 0px 0px 50px 10px #00000040;
+    }
+    .sideBarShow{
+        left: 0;
+    }
+
+}
+@media(max-width:992px){
+    .schoolInfo{
+        padding: 2em 2em;
+    }
+    .appointmentCalender{
+        padding: 0;
+    }
+    .navbar-toggler{
+        box-shadow: none !important;
+    }
+    .navbar{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .navbar-brand img{
+        width: 70%;
+        height: 50px;
+    }
+    .navbar-nav{
+        align-items: flex-end;
+    }
+    .navbar-nav a{
+        margin-top: 1em;
+    }
+    .mainBody{
+        height: 100%;
+    }
+    .wrapper header .fa-bars{
+        display: block;
+        order: 1;
+        color: #25AAE6;
+    }
+    .wrapper header div{
+        order: 3;
+    }
+    .wrapper header .logo{
+        order: 2;
+        font-size: 1em;
+        gap: 0.5em;
+    }
+    .wrapper header .logo img{
+        width: 54px;
+        height: 61px;
+    }
+    .mainBodyWrapper{
+        padding: 2em 1em;
+    }
+    .wrapper header{
+        padding: 1em 1em;
+    }
+    .signBody form{
+        padding: 2em 2em;
+    }
+
+    .signBody form header h1{
+        font-size: 1.8em;
+    }
+    .sideBar{
+        width: 300px;
+        position: absolute;
+        top: 0;
+        left: -400px;
+        z-index: 99;
+        transition: all ease-in-out 300ms;
+        box-shadow: 0px 0px 50px 10px #00000040;
+    }
+    .sideBarShow{
+        left: 0;
+    }
+    .mainContent .header .col-2{
+        width: 50%;
+    }
+    .tableSection{
+        min-height: 100%;
+    }
+    .tableContainer table{
+        width: 800px;
+    }
+    .tableContainer table th{
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+    .tableContainer table td{
+        font-size: 0.8em;
+        font-weight: 300;
+    }
+    .tableContainer{
+        max-height: 400px;
+    }
+    .signBody.schoolAccountBody{
+        padding: 1em;
+    }
+    /* .schoolFormContainer{
+        padding: 0;
+        margin: 0;
+    } */
+    .previewImgBtn{
+        width: 4.3em;
+        height: 4.3em;
+        font-size: 0.5em;
+    }
+    .commanSheduler{
+        margin-bottom: 1em;
+    }
+}

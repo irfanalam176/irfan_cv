@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modals.css" />
+    <link rel="stylesheet" href="./css/calender.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+
+        <nav class="navbar navbar-expand-lg customNavbar">
+            <div class="container-fluid">
+              <a class="navbar-brand me-2 me-lg-5" href="#">
+                <img src="./img/logo2.png" alt="" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" ></i></span>
+              </button>
+              <div class="collapse navbar-collapse mx-auto mx-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active navbarBtn mainBtn" aria-current="page" href="#"
+                      ><img src="./img/cameraWhite.svg" alt="" />照相預約系統</a
+                    >
+                  </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"
+                      ><img class="boockIcon" src="./img/navLogin.svg" alt="" />
+                      登出</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link circleBtn" href="#">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link circleBtn" href="#">
+                      <i class="fa-solid fa-user"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link circleBtn active" href="#">
+                      <i class="fa-solid fa-house"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
+      <div class="mainBodyWrapper">
+        <div class="schoolInfo">
+            <h1 class="mainHeading">學校資訊</h1>
+            <div class="row mb-3">
+                <div class="col-lg-3">
+                    <label for="">學校名稱</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="col-lg-3">
+                    <label for="">班級名稱</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="col-lg-3">
+                    <label for="">連絡人</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="col-lg-3">
+                    <label for="">電話</label>
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9">
+                    <label for="">電話</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="col-lg-3 mt-4 mt-lg-auto">
+                    <a href="" class="mainBtn largeBtn outlined">修改儲存</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="schoolInfo">
+            <h1 class="mainHeading">預約攝影時段</h1>
+           <div class="appointmentCalender">
+            <div class="row">
+                <div class="col-lg-4">
+                  <img src="./img/calender.svg" alt="" class="mb-3" />
+                  <div class="calendar">
+                    <div class="group header">
+                      <p class="left pointer minusmonth">
+                        <img src="./img/leftArrow.svg" alt="" />
+                      </p>
+                      <p class="right pointer addmonth">
+                        <img src="./img/rightArrow.svg" alt="" />
+                      </p>
+                      <p class="left monthname center pointer"></p>
+                      <h1 id="year" class="mx-auto"></h1>
+                    </div>
+                    <ul class="group">
+                      <li>Mo</li>
+                      <li>Tu</li>
+                      <li>We</li>
+                      <li>Th</li>
+                      <li>Fr</li>
+                      <li>Sa</li>
+                      <li>Su</li>
+                    </ul>
+                  </div>
+                  <div class="calenderLegends">
+                    <div>
+                      <ul>
+                        <li><span style="--color:#606060;"></span> 已全部被<br/>預約</li>
+                        <li><span style="--color:#25AAE6;"></span> 已全部被<br/>預約</li>
+                        <li><span style="--color:#F2994A;"></span> 已全部被<br/>預約</li>
+                        <li><span style="--color:red;"></span> 已全部被<br/>預約</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 px-5 customRadioContainer">
+                  <img src="./img/timer.svg" alt="" class="mb-3" />
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="customRadio">
+                        <input type="radio" id="radio1" name="radio" />
+                        <label for="radio1">08:00</label>
+                      </div>
+                      <div class="customRadio">
+                        <input type="radio" id="radio2" name="radio" />
+                        <label for="radio2">08:00</label>
+                      </div>
+                      <div class="customRadio">
+                        <input type="radio" id="radio3" name="radio" />
+                        <label for="radio3">08:00</label>
+                      </div>
+                      <div class="customRadio">
+                        <input type="radio" id="radio4" name="radio" />
+                        <label for="radio4">08:00</label>
+                      </div>
+                      <div class="customRadio">
+                        <input type="radio" id="radio5" name="radio" />
+                        <label for="radio5">08:00</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="customRadio">
+                        <input type="radio" id="radio6" name="radio" />
+                        <label for="radio6">08:00</label>
+                      </div>
+                      <div class="customRadio">
+                        <input type="radio" id="radio7" name="radio" />
+                        <label for="radio7">08:00</label>
+                      </div>
+                      <div class="customRadio">
+                        <input type="radio" id="radio8" name="radio" />
+                        <label for="radio8">08:00</label>
+                      </div>
+                      <div class="customRadio">
+                        <input type="radio" id="radio9" name="radio" />
+                        <label for="radio9">08:00</label>
+                      </div>
+                      <div class="customRadio">
+                        <input type="radio" id="radio10" name="radio" />
+                        <label for="radio10">08:00</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <img src="./img/camera2.svg" alt="" class="mb-3" />
+                  <div class="timing ps-5">
+                    <div class="title">
+                      <img src="./img/blueTick.svg" alt="" />
+                      預約行程如下:
+                    </div>
+                    <div style="padding-left: 3em">
+                      <h6>2024 年7 月15 日</h6>
+                      <h6>星期三</h6>
+                      <h6>上午 9:00 點</h6>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col">
+                                <a href="" class="mainBtn largeBtn outlined">取消</a>
+                            </div>
+                            <div class="col">
+                                <a href="" class="mainBtn largeBtn ">確認送出</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+        </div>
+        <h6 class="brand">系統設計：易及資訊有限公司</h6>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+   <!-- <script src="./js/sortData.js"></script> -->
+   <script src="./js/calendar.js"></script>
+</body>
+</html>

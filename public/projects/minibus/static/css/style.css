@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.owl-stage-outer{
+    padding-bottom: 3em;
+    padding-top: 1em;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+/* OVERRIDE BOOTSTRAP */
+.h1,
+h1 {
+    font-size: 1.875rem !important;
+}
+
+.h2,
+h2 {
+    font-size: 1.25rem !important;
+}
+
+.text-muted {
+    color: #555555;
+}
+.mutedBold{
+    font-size: 1.875em !important;
+    font-weight: 600 !important;
+    line-height: 30px;
+}
+
+.text-primary {
+    color: #FFCC00 !important;
+}
+
+.bg-primary {
+    background-color: #FFCC00 !important;
+}
+
+.bg-secondary {
+    background-color: #D6D6D6 !important;
+}
+
+.accordion .accordion-item {
+    border-radius: 0 !important;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button {
+    background-color: #EDECEC;
+}
+
+.accordion-button:not(.collapsed) {
+    border-radius: 0 !important;
+    font-weight: bold;
+    color: black;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* END OVERRIDE BOOTSTRAP */
+
+/* Customizing Google Icons Size */
+.material-icons {
+    height: 16px;
+    font-size: 16px;
+}
+
+.card .cardBtn {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    width: 80%;
+    padding: .5em 0.5em;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    transform: translate(-50%);
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.card .cardBtn:hover {
+    box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.06);
+}
+
+.card .cardIcon {
+    --size: 48px;
+    width: var(--size);
+    height: var(--size);
+    border: 1px solid #FFCC00;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .cardIcon img {
+    width: 60%;
+}
+
+
+.listCheckbox {
+    padding: 0;
+}
+
+.listCheckbox li {
+    margin-left: 0;
+    position: relative;
+    /* padding-left: 28px; */
+}
+
+.listCheckbox li strong {
+    font-size: 20px;
+    font-weight: 600 ;
+}
+.listCheckbox li strong span{
+    font-weight: 700 ;
+    font-size: 25px ;
+}
+.listCheckbox li p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.listCheckbox li .icon {
+    top: 0px;
+    left: 0;
+    width: 1rem;
+    height: 1.5em;
+    /* position: absolute; */
+    display: inline-block;
+    margin-right: 1.2em;
+}
+
+.listCheckbox li .icon img {
+    width: 28px;
+    height: 28px;
+}
+.mainText{
+    font-weight: 300;
+    font-size: 1em;
+    color: #000000;
+    line-height: 22px;
+    text-align: left;
+}
+.title.hasIndicator,
+section .title {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.title.hasIndicator::after,
+section .title::after {
+    content: "";
+    left: 50%;
+    bottom: -8px;
+    position: absolute;
+    width: 117px;
+    border-bottom: 2px solid #FFCC00;
+    transform: translateX(-50%);
+}
+.faq .title::after{
+    left: 0;
+    transform: translateX(0);
+}
+.title.indicatorLGLeft::after,
+section .title.indicatorLGLeft::after {
+    left: 0 !important;
+    transform: unset !important;
+}
+.customMainHeading{
+    font-size: 27px !important;
+    font-weight: 400 !important;
+}
+.customMainHeading strong{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+section .title.indicatorWhite::after {
+    border-color: white !important;
+}
+
+section#safety ul.listCheckbox li {
+    /* gap: 5px; */
+    /* margin-bottom: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+
+section#ourMission .container-xl {
+    z-index: 1;
+    position: relative;
+}
+
+section#ourMission .yellowImg {
+    z-index: 1;
+    margin-top: -13%;
+    background-image: url(../images/yellow-bg.png);
+    height: 480px;
+    text-align: center;
+}
+section#ourMission .yellowImg p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section#recentTours .card,
+section#awesomeFeatures .card,
+section#weStandOut .card {
+    position: relative;
+}
+section#recentTours .card::after{
+    position: absolute;
+    content: "";
+    background-color: #E3E3E3;
+    height: 162px;
+    width: 110px;
+    left: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+section#awesomeFeatures .card .cardIcon,
+section#weStandOut .card .cardIcon {
+    bottom: calc(var(--size) / 2 * -1);
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+section#awesomeFeatures .card{
+    padding-bottom: 2em !important;
+}
+#ourMiniBusCoaches .card .material-icons img{
+   transform: scale(1);
+}
+#ourMiniBusCoaches .card .material-icons + span{
+    font-size: 10px;
+    margin-bottom: -3px;
+}
+#ourMiniBusCoaches .card .material-icons{
+    height: 100%;
+}
+#ourValues .card strong{
+    font-size: 20px;
+    font-weight: 700;
+}
+#ourValues .card p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+#ourValues .card img{
+    width: 74px;
+    height: 74px;
+}
+section#awesomeFeatures .card .cardIcon{
+    width: 78px;
+    height: 78px;
+    bottom: -39px;
+    /* transform: translateX(-50%) translateY(-50%); */
+}
+.border-top-primary {
+    border: transparent;
+    border-top: 4px solid #FFCC00 !important;
+}
+
+footer {
+    padding: .5rem 0rem;
+    color: white;
+    background-color: #38393F;
+}
+
+footer .container-xxl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.myIcons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+
+.myIcons .myIcon {
+    --size: 23px;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bs-success);
+    color: white;
+
+    font-size: 24px;
+}
+
+.myIcons .myIcon img{
+    width: 100%;
+    padding: 2px;
+}
+.myIcons .myIcon.sm {
+    --size: 24px;
+}
+
+.reviews .myIcon {
+    --size: 24px;
+}
+
+.reviews .myIcon.sm {
+    --size: 16px;
+    font-size: 16px;
+
+}
+
+header .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+header .vehiclesContainer {
+    background-position: center;
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    padding: 0.6em 0;
+    background-image: url(../images/pattren.jpg);
+}
+
+header .vehiclesContainer .container {
+    gap: 16px;
+    display: flex;
+    justify-content: end;
+}
+.honestCard .strong{
+    position: relative;
+}
+.honestCard .strong .abosolutText{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 215px;
+}
+.owl-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.owl-dot span{
+    display: inline-block;
+    width: 31px;
+    height: 8px;
+    background-color: #D9D9D9 !important;
+    margin-right: 1em;
+}
+.owl-dot.active span{
+    background-color: #5E5E5E !important;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    position: absolute;
+    right: -3em !important;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid white;
+    border-radius: 100px;
+    background-size: 50%;
+}
+.carousel-control-prev-icon{
+    right: unset !important;
+    left: -3em !important;
+}
+.accordion-button::after{
+    background-image: url("../images/close.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease-in-out 300ms;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url("../images/open.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.carousel-inner .myIcons span{
+    font-size: 0.7em;
+}
+.navbar-brand img{
+    width: 10em;
+}
+.nav-link{
+    font-size: 12px;
+}
+#demoCard{
+    min-width: unset !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+}
+#demoCard img{
+    width: 118px;
+    height: 118px;
+}
+#demoCard h5{
+    font-size: 1.1em !important;
+    font-weight: 600 !important;
+    margin-bottom: 6px !important;
+}
+#demoCard p{
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 15px;
+}
+#demoCard .card-body{
+    padding-top: 10px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+section#awesomeFeatures .card{
+    padding-top: 0em !important;
+}
+#awesomeFeatures .card-body{
+    padding: 26px !important;
+}
+#awesomeFeatures .card-body .card-title{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+}
+#awesomeFeatures .card-body .card-text{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+#awesomeFeatures  .bg-primary{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+}
+#awesomeFeatures  .bg-primary strong{
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+}
+#awesomeFeatures  .bg-primary  small{
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
+.mainHeading{
+    font-size: 30px !important;
+    font-weight: 600 !important;
+}
+.card .material-icons{
+    font-size: 12px;
+    height: unset;
+}
+.card .material-icons+span{
+    font-size: 10px;
+}
+.card strong{
+    font-size: 9px;
+}
+.card small{
+    font-size: 9px;
+}
+.indicatorLGRight{
+    font-size: 1.875em !important;
+    font-weight: 600 !important;
+}
+#safety{
+    padding-bottom: 130px !important;
+}
+.footer .title.hasIndicator{
+    font-weight: 500;
+    font-size: 30px !important;
+    margin-bottom: 1em;
+}
+.footer .title.hasIndicator::after{
+    width: 70px;
+    bottom: -14px;
+}
+.detailText{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.dicatorCenter.title.mutedBold::after{
+    display: none;
+}
+ #bigaar .card .material-icons+span{
+    font-size: 20px;
+ }
+ #bigaar .card .material-icons{
+    transform: scale(2);
+    margin-right: 10px;
+ }
+ #bigaar .card .card-text{
+    justify-content: center !important;
+    gap: 0.7em;
+ }
+ #bigaar .owl-stage-outer{
+    padding-bottom: 7px;
+ }
+ #bigaar .owl-dots{
+    display: flex;
+ }
+ 
+/* tabs and mobile */
+@media screen and (max-width: 992px) {
+    #bigaar .card .material-icons+span{
+        font-size: 13px;
+     }
+     #bigaar .card .material-icons{
+        transform: scale(1.3);
+        margin-right: 0;
+     }
+    #bigaar.owl-carousel .owl-item .card{
+        width: 100%  ;
+    }
+    #bigaar .card .card-text{
+        justify-content: space-between !important;
+        gap: 0em;
+     }
+     #bigaar .owl-stage-outer{
+        padding-bottom: 20px;
+     }
+    .dicatorCenter.title.mutedBold::after{
+        display: unset;
+    }
+    #ourMiniBusCoaches .card .material-icons + span{
+        font-size: 13px;
+    }
+    #ourMiniBusCoaches .card .material-icons img{
+        transform: scale(1.3);
+    }
+    #faqs .mainHeading::after{
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+    #ourValues .card strong{
+        font-size: 18px;
+    }
+    .honestCard .strong .abosolutText{
+        left: -20%;
+    }
+    .footer .title.hasIndicator{
+        font-size: 25px !important;
+        margin-top: 1em;
+    }
+    .footer .col-lg div{
+        font-size: 20px;
+    }
+    #demoCard{
+        min-width: 140px  !important;
+    }
+    #demoCard h5{
+        font-size: 17px !important;
+    }
+    #demoCard p{
+        font-size: 11px !important;
+    }
+    .navbar-toggler{
+        background-color: black !important;
+        color: #FFCC00;
+    }
+    .navbar-toggler-icon{
+        color: #FFCC00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-brand img{
+        width: 7em;
+    }
+    .card .cardBtn{
+        font-size: 0.7em;
+    }
+    .owl-dots{
+        display: none;
+    }
+    .owl-stage-outer{
+        height: unset;
+        padding-bottom: 2em;
+        padding-top: 1em;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .title.indicatorCenter::after {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    .title.indicatorCenter.storyMobileHeading::after{
+        left: 0 !important;
+        transform: translateX(10%) !important;
+    }
+    .carousel-control-next-icon{
+        right: -2em !important;
+        font-size: 0.8em;
+    }
+    .carousel-control-prev-icon{
+        left: -2em !important;
+        font-size: 0.8em;
+    }
+    .reviews .myIcon{
+        --size:16px;
+    }
+    .reviews .myIcon.sm{
+        --size:12px;
+    }
+    .reviews .myIcon.sm img{
+        width: 100%;
+    }
+    .carousel-inner span,  .carousel-inner small{
+        font-size: 0.8em;
+    }
+    .carousel-inner strong,  .carousel-inner p{
+        font-size: 0.9em;
+    }
+    .mutedBold{
+        font-size: 23px !important;
+        color: #000000 !important;
+    }
+    p{
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+    li p{
+        font-size: 15px !important;
+    }
+    .yellowImg p{
+        font-size: 15px !important;
+        padding: 0 2em !important;
+        padding-top: 0.7em !important;
+    }
+    .listCheckbox li strong{
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .listCheckbox li strong span{
+        font-weight: unset;
+        font-size: unset;
+    }
+    .yellowImg{
+        background-image: url("../images/yellow-bg-mobile.png") !important;
+        padding: 1em 0em;
+        transform: translateY(0%) !important;
+
+    }
+    section#ourMission .yellowImg{
+        height: unset;
+    }
+    section#recentTours .card::after{
+        width: 100px;
+        height: 130px;
+        left: -10px;
+    }
+    .yellowImg>div{
+        transform: translateY(0%) !important;
+    }
+    .yellowImg>div img{
+        width: 100% !important;
+        margin-bottom: -18%;
+    }
+    .mainHeading{
+        font-size: 24px !important;
+    }
+    .safetyMobileHeading{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        background-color: white;
+        border-radius: 10px;
+        padding: 0.7em 1em;
+        margin: 1em 0;
+        margin-top: 0;
+    }
+    .safetyMobileHeading img{
+        width: 58px;
+        height: 58px;
+    }
+    .safetyMobileHeading h1{
+        color: black;
+        font-size: 24px !important;
+        line-height: 24px;
+        font-weight: 600;
+    }
+    .safetyMobileHeading h6{
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .extraLines{
+        display: inline-block;
+       display: none;
+    }
+    .extraLinesShow{
+        display: inline;
+    }
+    #safety{
+        padding-bottom: 2em !important ;
+    }
+    .listCheckbox li p{
+        padding-left: 40px;
+    }
+    .owl-carousel .owl-item .card{
+        width: 150px;
+    }
+    .owl-carousel .owl-item img{
+        width: 100%;
+        isolation: isolate;
+    }
+    .mainText{
+        text-align: unset;
+    }
+}
+@media(min-width:600px) and (max-width:1200px){
+    section#ourMission .yellowImg{
+        margin-top: -10px;
+        padding-bottom: 4em;
+    }
+    .honestCard .strong .abosolutText{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #ourMiniBusCoaches .card .material-icons + span{
+        font-size: 20px;
+    }
+    #ourMiniBusCoaches .card .material-icons img{
+        transform: scale(1.9);
+        margin-right: 10px;
+    }
+    .card small strong{
+        font-size: 20px;
+    }
+    #ourMiniBusCoaches .card .card-title{
+        font-size: 25px;
+    }
+   
+}
+@media(min-width:1000px) and (max-width:1200px){
+    .safetyMobileHeading{
+        width: 60%;
+        padding-right: 3em;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        background-color: white;
+        border-radius: 10px;
+        padding: 0.7em 1em;
+        margin: 1em 0;
+        margin-top: 0;
+    }
+    #demoCard{
+        min-width: 23% !important;
+    }
+    #demoCard img{
+        width: 100%;
+        height: auto;
+    }
+    .owl-dot span{
+        margin-right: 0.5em;
+    }
+    .tabletRelative{
+        position: relative;
+    }
+    .standSectionImg{
+        position: absolute;
+        right: 0;
+        width: 50% !important;
+    }
+    .tabletMiniBusP{
+        max-width: 800px !important;
+    }
+    .container{
+        max-width: 894px !important;
+    }
+    .faqs .mainHeading{
+        text-align: center;
+    }
+    .faq .title::after{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media(min-width:350px) and (max-width:400px){
+    .honestCard .strong .abosolutText{
+        left: -45px;
+    }
+}
+/* desktop and greator */
+@media screen and (min-width:992px) {
+ 
+    section .title.indicatorLGRight::after {
+        left: unset;
+        right: 0 !important;
+        transform: unset !important;
+    }
+
+    .scrollbar-lg-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .scrollbar-lg-hide {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
+@media(min-width:1400px){
+    .container{
+        max-width: 1160px !important;
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1969 Bulls-Mint</title>
+    <link rel="icon" type="image/png" href="https://unicorn-cdn.b-cdn.net/6268d095-ef61-43d6-8f1c-316246d931d2/"
+		sizes="16x16" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="customNavBar mint">
+        <!-- <img src="./img/logo.png" alt="" class="logo deskTop"/> -->
+        <div class="logo deskTop">
+          <img 
+          src="https://unicorn-cdn.b-cdn.net/6268d095-ef61-43d6-8f1c-316246d931d2/" height="65"
+          alt="Cow 6712e27a" />
+  
+  
+        <span>1969 Bulls</span>
+        </div>
+               <div class="collapsBtn" onclick="collaps()">
+          <span class="line " id="crossLeft"></span>
+          <span class="line " id="hideShow"></span>
+          <span class="line " id="crossRight"></span>
+         </div>
+        <!-- <img src="./img/logo.png" alt="" class="logo mobile"/> -->
+        <div class="logo mobile">
+          <img 
+          src="https://unicorn-cdn.b-cdn.net/6268d095-ef61-43d6-8f1c-316246d931d2/" height="65"
+          alt="Cow 6712e27a" />
+  
+  
+        <span >1969 Bulls</span>
+        </div>
+        <ul id="collapsBtn" >
+          <li><a href="./about.html" >About</a></li>
+          <li><a href="https://1969-bulls.gitbook.io/whitepapper/" target="_blank">Whitepaper</a></li>
+          <li><a href="https://opensea.io/" target="_blank">Opensea</a></li>
+          <li><a href="#" >Mint</a></li>
+          <li><a href="./index.html" class="activeLink">Whitelist Checker</a></li>
+          <li>
+            <a href="https://twitter.com/1969Bulls" target="_blank" class="twitter">
+              <img src="./img/twitter.svg" alt="">
+         </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- hero -->
+     <div class="mintPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 my-auto">
+                    <div class="photos-01 gifImf">        
+                                <span class="photos-01__person">
+                                    <div class="photos-01__image_box photos-01__link">
+                                        <img loading="lazy"
+                                        
+                                            src="https://unicorn-cdn.b-cdn.net/24640a11-903f-4ce5-8fb7-9d660dbfb141/output-onlinegiftools.png"
+                                            alt="Output onlinegiftools" class="js-lightbox-single-image photos-01__image"
+                                            data-width="420" data-height="405">
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="bottom_cta">
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mintCard">
+                                <h1 class="mainTitle">1969 Bulls</h1>
+                                <p class="mainText">
+                                    Experience the nostalgia of a bygone era with our vintage-themed collection - where every piece tells a story of timeless charm and character.
+                                </p>
+                                <div class="row gx-3 gy-1">
+                                    <div class="col-6">
+                                        <div class="miniCards">
+                                            <h6>Supply</h6>
+                                            <h3>1111</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="miniCards">
+                                            <h6>Date</h6>
+                                            <h3>10th March</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="miniCards">
+                                            <h6>Whitelist</h6>
+                                            <h3>0.012 ETH</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="miniCards">
+                                            <h6>Public</h6>
+                                            <h3>0.018 ETH</h3>
+                                        </div>
+                                    </div>
+         
+                                    <div class="col-6">
+                                        <div class="miniCards">
+                                            <h6>WI Time</h6>
+                                            <h3>9pm UTC</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="miniCards">
+                                            <h6>Public Time</h6>
+                                            <h3>9:30pm UTC</h3>
+                                        </div>
+                                    </div>
+                  
+                                </div>
+                                <div class="mintInfo">
+                                    <div>Total Mint</div>
+                                    <div>0/1111</div>
+                                </div>
+                                <!-- <div class="mintInfo">
+                                    <div>WL Mint</div>
+                                    <div>1369/1369</div>
+                                </div> -->
+                                <div class="counters">
+                                    <span onclick="count('-')">-</span>
+                                    <span id="countNum">0</span>
+                                    <span onclick="count('+')">+</span>
+                                </div>
+                                <a href="#" class="walletBtn">Connect Wallet</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+          </div>
+     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="./js/navBtn.js"></script>
+  <script src="./js/counter.js"></script>
+  <script src="./js/main.js"></script>
+</html>

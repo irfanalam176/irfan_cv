@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1969 Bulls-Whitelist Checker</title>
+    <link rel="icon" type="image/png" href="https://unicorn-cdn.b-cdn.net/6268d095-ef61-43d6-8f1c-316246d931d2/"
+		sizes="16x16" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+        <nav class="customNavBar">
+      <!-- <img src="./img/logo.png" alt="" class="logo deskTop"/> -->
+      <div class="logo deskTop">
+        <img class="nav-02__logo_img"
+        src="https://unicorn-cdn.b-cdn.net/6268d095-ef61-43d6-8f1c-316246d931d2/" height="65"
+        alt="Cow 6712e27a" />
+
+
+      <span class="nav-02__logo_text ">1969 Bulls</span>
+      </div>
+             <div class="collapsBtn" onclick="collaps()">
+        <span class="line " id="crossLeft"></span>
+        <span class="line " id="hideShow"></span>
+        <span class="line " id="crossRight"></span>
+       </div>
+      <!-- <img src="./img/logo.png" alt="" class="logo mobile"/> -->
+      <div class="logo mobile">
+        <img class="nav-02__logo_img"
+        src="https://unicorn-cdn.b-cdn.net/6268d095-ef61-43d6-8f1c-316246d931d2/" height="65"
+        alt="Cow 6712e27a" />
+
+
+      <span class="nav-02__logo_text ">1969 Bulls</span>
+      </div>
+      <ul id="collapsBtn" >
+        <li><a href="./about.html" >About</a></li>
+        <li><a href="https://1969-bulls.gitbook.io/whitepapper/" target="_blank">Whitepaper</a></li>
+        <li><a href="https://opensea.io/" target="_blank">Opensea</a></li>
+        <li><a href="./mint.html">Mint</a></li>
+        <li><a href="#" class="activeLink">Whitelist Checker</a></li>
+        <li>
+          <a href="https://twitter.com/1969Bulls" target="_blank" class="twitter">
+            <img src="./img/twitter.svg" alt="">
+       </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- hero card -->
+    <div class="heroCard">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mainSection mx-auto">
+              <h1 class="title">
+                Whitelist <span class="blackText">Cheker</span>
+              </h1>
+              
+              <input
+                class="wallentInp"
+                type="text"
+                placeholder="Enter your wallet address"
+                id="checker"
+              />
+              <p class="mainText">
+               Take a chance, try your luck<br></br>Fate may smile, or it may duck.
+              </p>
+              <button
+                class="mainBtn"
+                onclick="getResult()"
+                data-bs-toggle="modal" data-bs-target="#exampleModal"
+              >
+                Check
+              </button>
+            </div>
+          </div>
+        </div>
+      <img src="./img/cow.png" alt="" class="cowImg"/>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modalBody">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/navBtn.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
