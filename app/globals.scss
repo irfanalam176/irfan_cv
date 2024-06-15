@@ -249,6 +249,13 @@
     &:hover{
       background-size: 120%;
     }
+    &:disabled{
+      &::before{
+        display: none;
+      }
+      background: linear-gradient(120deg,#6e6d6b 60%,#423e3e);
+      color: white !important;
+    }
   }
 
   .mainBtn.outlined{
@@ -277,6 +284,7 @@
       color: $secondaryColor;
     }
   }
+
   .mainBtn.resumeBtn{
     margin: 2em auto;
   }

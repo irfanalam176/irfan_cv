@@ -86,19 +86,19 @@ const Contact = () => {
 
         <div className="input">
           <label htmlFor="to_name">Name</label>
-          <input type="text" id="to_name" name='to_name' />
+          <input type="text" id="to_name" name='to_name' required/>
         </div>
         <div className="input">
           <label htmlFor="from_name">Email</label>
-          <input type="email" id="from_name" name='from_name' />
+          <input type="email" id="from_name" name='from_name' required/>
         </div>
         <div className="input">
           <label htmlFor="message">Message</label>
-          <textarea name="message" id="message" >
+          <textarea name="message" id="message"  required>
 
           </textarea>
         </div>
-        <button className='mainBtn outlined' type="submit">Submit</button>
+        <button className='mainBtn outlined' type="submit" disabled={spinner}>Submit</button>
       </form>
     </div>
   )
